@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+
+
+body{
+    font-family: 'Teko', sans-serif;
+    background-color: black;
+    margin: 0;
+}
+
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+
+.topo {
+
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    
+
+}
+
+.topo .container{
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.menu a{
+    text-decoration: none;
+    margin-left: 45px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.banner{
+    background-image: url(img/banner.jpg);
+    height: 100vh;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    
+       
+}
+
+.banner h1{
+    padding-top: 250px;
+    font-size: 100px;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 80px;
+    
+}
+
+.banner p{
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 45px;
+    color: white;
+    background-color: red;
+    text-transform: uppercase;
+    border: 0;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: 'Teko', sans-serif;
+    margin-bottom: 20px;
+    
+}
+
+.titulo h2{
+    color: white;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.colunas{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.coluna{
+    width: 22%;
+    text-align: center;
+
+}
+
+.coluna p{
+
+    color: white;
+    font-weight:normal;
+}
+
+.colunas-precos{
+    display: flex;
+    align-items: center;
+    
+    
+    
+}
+
+.coluna-preco{
+    width: 35%;
+    text-align: center;
+    background-color:white;
+    
+}
+
+.coluna-preco h3{
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.coluna-preco p{
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 0 10px 20px;
+    margin: 0;
+    
+}
+
+.info{
+    margin-top: 30px;
+    background-color: red;
+    padding: 10px;
+
+}
+
+.info p{
+    color: white;
+    text-align: center;
+}
+
+.rodape{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.rede-social img{
+    
+    padding: 0 10px;
+    text-align: center;
+}

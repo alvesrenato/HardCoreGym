@@ -1,0 +1,25 @@
+//mixin ---------------------------------//
+@mixin titulo(){
+    margin: 0;
+    color: $corPrimaria;
+    text-shadow: 5px 5px 10px $preto;
+}
+
+@mixin btn($tipo) {
+    display: inline-block;
+    padding: 10px 50px;
+    color: $branco;
+    font-weight: $negrito;
+    font-size: 18px;
+    text-decoration: none;
+
+    @if ($tipo ==1) {
+        background-color: $corContraste;
+        
+    }@else if ($tipo ==2){
+        background-color: $preto; 
+    }
+    
+}
+
+//mixin ---------------------------------//

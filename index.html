@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HardCore Gym</title>
+  <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/lightbox.min.css">
+  <!-- Renomar a pasta dist para lightbox -->
+</head>
+
+<body>
+  <div class="banner">
+
+    <div class="container">
+
+      <header class="topo">
+        <div class="logo"><img src="img/logo.png" alt=""></div>
+        <div class="menu">
+          <a href="#">Início</a>
+          <a href="#">Nossa Academia</a>
+          <a href="#">Planos</a>
+          <a href="#">Unidades</a>
+          <a href="#">Fale Conosco</a>
+        </div>
+
+      </header>
+
+      <article>
+
+        <h1 data-aos="fade-right" data-aos-duration="500" data-os-duration="3000">LOREM IPSUM DOLOR SIT AMET</h1>
+        <p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE
+          MAGNA ALIQUA. QUIS IPSUM SUSPENDISSE ULTRICES GRAVIDA. RISUS COMMODO VIVERRA MAECENAS ACCUMSAN LACUS VEL
+          FACILISIS</p>
+
+        <a href="#" class="btn-1">Lorem Ipsum</a>
+
+      </article>
+    </div>
+  </div>
+
+  <article class="container">
+
+    <h2>Lorem Ipsum</h2>
+
+    <div class="row">
+      <div class="col">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti vel pariatur ut delectus! Totam impedit
+          sunt esse consequatur, asperiores repellat!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, aliquam?</p>
+      </div>
+      <div class="col galeria">
+        <a href="img/galeria/academia-1.jpg" data-lightbox="galeria" data-title="Academia"><img
+            src="img/galeria/thumb-academia-1.jpg" alt="teste"></a>
+        <a href="img/galeria/academia-2.jpg" data-lightbox="galeria" data-title="Academia"><img
+            src="img/galeria/thumb-academia-2.jpg" alt=""></a>
+        <a href="img/galeria/academia-3.jpg" data-lightbox="galeria" data-title="Academia"><img
+            src="img/galeria/thumb-academia-3.jpg" alt=""></a>
+        <a href="img/galeria/academia-4.jpg" data-lightbox="galeria" data-title="Academia"><img
+            src="img/galeria/thumb-academia-4.jpg" alt=""></a>
+        <a href="img/galeria/academia-5.jpg" data-lightbox="galeria" data-title="Academia"><img
+            src="img/galeria/thumb-academia-5.jpg" alt=""></a>
+        <a href="img/galeria/academia-6.jpg" data-lightbox="galeria" data-title="Academia"><img
+            src="img/galeria/thumb-academia-6.jpg" alt=""></a>
+      </div>
+    </div>
+  </article>
+
+  <article class="container">
+
+    <h2>Lorem Ipsum</h2>
+
+    <div class="row">
+
+      <div class="col plano">
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        <span class="preco">R$ 59,90</span>
+        <a href="#" class="btn-1">Lorem Ipsum</a>
+
+      </div>
+      <div class="col plano">
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        <span class="preco">R$ 59,90</span>
+        <a href="#" class="btn-2">Lorem Ipsum</a>
+      </div>
+
+      <div class="col plano">
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+        <span class="preco">R$ 59,90</span>
+        <a href="#" class="btn-1">Lorem Ipsum</a>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <footer class="container rodape">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at voluptatibus quis quisquam asperiores ab
+      dolor, distinctio iste voluptatum commodi itaque molestiae ullam maxime, quasi aut ipsa vero tempore fugiat?</p>
+  </footer>
+
+
+  <div class="container redesocial">
+    <a href="#"><img src="img/instagram.png" alt=""></a>
+    <a href="#"><img src="img/facebook.png" alt=""></a>
+    <a href="#"><img src="img/twitter.png" alt=""></a>
+    <a href="http://wa.me/5521999666333"><img src="img/whatsapp.png" alt=""></a>
+  </div>
+
+  <div class="lgpd close">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, quibusdam?</p>
+    <button class="btn-2" id="btnConcordo">Concordo</button>
+  </div>
+
+  <script src="bootstrap/js/jquery-3.6.0.min.js"></script>
+  <script src="dist/js/lightbox.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/maskedinput-1.4.1.js"></script>
+  <script src="bootstrap/js/jquery.validate.js"></script>
+  <script src="bootstrap/js/script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    lightbox.option({
+      'albumLabel': "Imagem %1 of %2",
+      "wrapAround": true
+
+    })
+  </script>
+
+  <script>
+
+    if(localStorage.getItem("clicou") != "sim"){
+      
+      document.querySelector(".lgpd").classList.remove("close")
+
+    }
+
+    var btnConcordo = document.querySelector("#btnConcordo");
+    // console.log("btnConcordo");
+
+    btnConcordo.addEventListener("click", function(){
+      // console.log("clicou");
+      document.querySelector(".lgpd").style.visibility = "hidden";
+      localStorage.setItem("clicou","sim");
+    
+    });
+  </script>
+
+
+</body>
+
+</html>
